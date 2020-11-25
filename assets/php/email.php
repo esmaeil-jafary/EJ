@@ -1,7 +1,7 @@
 <?php
 mb_internal_encoding("UTF-8");
 
-$to = 'hello@example.com';
+$to = 'support@ejafari.ir';
 $subject = 'پیام جدید از وب‌سایت';
 $email = "";
 $headers = "";
