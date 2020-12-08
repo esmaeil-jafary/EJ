@@ -5,14 +5,13 @@
 
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content="EJafary | پروژهای طراحی سایت و بهینه سازی وبسایت ها| برنامه نویسی ، طراحی سایت ،  انجام پروژه">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	
 	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
 	<meta name="theme-color" content="#020413">
 </head>
@@ -23,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
             <div class="container">
                 <a class="navbar-brand ts-push-down__50 position-absolute ts-bottom__0 bg-white pb-0 ts-z-index__1 ts-scroll" href="#page-top">
-                    <img src="assets/img/logo.png" alt="">
+                    <img  src="assets/img/logo.png" alt="">
                 </a>
                 <!--end navbar-brand-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +39,30 @@
                         <a class="nav-item nav-link ts-scroll" href="#testimonials">همکاران</a>
                         <a class="nav-item nav-link ts-scroll" href="https://eventit.ir/author/jafary/">مقالات</a>
                         <a class="nav-item nav-link ts-scroll" href="#form-contact">تماس</a>
+                        <li class col-md-3></li>                      
                     </div>
+                   
+                        
+                
                     <!--end navbar-nav-->
+                  
                 </div>
                 <!--end collapse-->
-                <div class="col-md-4"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3 ">
+                <?php
+         include_once 'jdf.php';
+
+    $day_number = jdate('j');
+    $month_number = jdate('n');
+    $year_number = jdate('y');
+    $day_name = jdate('l');
+    echo "<h5 class='text-dark'> امروز $day_name ، $day_number-$month_number-$year_number</h5>";
+
+
+
+  ?>
+                </div>
             </div>
             <!--end container-->
         </nav>
