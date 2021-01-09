@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-	<title> EJafary - اسماعیل جعفری </title>
+	<title> EJafary - قالب شخصی </title>
 
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="EJafary  | پروژهای طراحی سایت و بهینه سازی وبسایت ها| برنامه نویسی ، طراحی سایت ، انجام پروژه|اسماعیل جعفری ، ">
+    <meta name="description" content="EJafary | پروژهای طراحی سایت و بهینه سازی وبسایت ها| برنامه نویسی ، طراحی سایت ،  انجام پروژه">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -14,48 +14,44 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
 	<meta name="theme-color" content="#020413">
-
-
 </head>
 
-<body data-spy="scroll" data-target=".navbar" class="has-loading-screen rtl">
-
+<body data-spy="scroll" data-target=".navbar" class="has-loading-screen">
     <div class="ts-page-wrapper" id="page-top">
-    
         <!--NAVIGATION ******************************************************************************************-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-        
     <div class="col-md-1">
-    <div class = "dropdown">
-   <a data-toggle = "dropdown" href = "#"><i class="fas fa-globe">Language</i></a>
+    <div class = "dropdown ">
+    <a data-toggle = "dropdown" href = "#" class="h-50"><i class="fas fa-globe">&nbsp;Language</i></a>
    
    <ul class = "dropdown-menu" role = "menu" aria-labelledby = "dLabel">
-   <li><a href="indexEN.php"><img src="assets/img/EN.jpg"></a>
+      <li><a href="indexEN.php"><img src="assets/img/EN.jpg"></a>
      <a href="index.php"><img src="assets/img/PR.jpg"></a></li>
    </ul>
 	
 </div>
-
+ 
     
     </div>
-   
             <div class="container">
+                <a class="navbar-brand ts-push-down__50 position-absolute ts-bottom__0 bg-white pb-0 ts-z-index__1 ts-scroll" href="#page-top">
+                    <img  src="assets/img/logo.png" alt="">
+                </a>
+                <!--end navbar-brand-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#page-top"><img  src="assets/img/ejafary.png" alt="" ></a>
                 <!--end navbar-toggler-->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav d-block d-lg-flex ml-auto text-right">
-                       
-                        <a class="nav-item nav-link active ts-scroll" href="#page-top">خانه <span class="sr-only">(کنونی)</span></a>
-                        <a class="nav-item nav-link ts-scroll" href="#my-services">خدمات</a>
-                        <a class="nav-item nav-link ts-scroll" href="#about-me">درباره من</a>
-                        <a class="nav-item nav-link ts-scroll" href="#my-skills">مهارت ها</a>
-                        <a class="nav-item nav-link ts-scroll" href="#portfolio">نمونه‌کارها</a>
-                        <a class="nav-item nav-link ts-scroll" href="#testimonials">همکاران</a>
-                        <a class="nav-item nav-link ts-scroll" href="https://eventit.ir/author/jafary/">مقالات</a>
-                        <a class="nav-item nav-link ts-scroll" href="#form-contact">تماس</a>
+                        <a class="nav-item nav-link active ts-scroll" href="#page-top">HOME <span class="sr-only">(کنونی)</span></a>
+                        <a class="nav-item nav-link ts-scroll" href="#my-services"Services</a>
+                        <a class="nav-item nav-link ts-scroll" href="#about-me">About Me</a>
+                        <a class="nav-item nav-link ts-scroll" href="#my-skills">Skills</a>
+                        <a class="nav-item nav-link ts-scroll" href="#portfolio">Portfolio</a>
+                        <a class="nav-item nav-link ts-scroll" href="#testimonials">Colleagues</a>
+                        <a class="nav-item nav-link ts-scroll" href="https://eventit.ir/author/jafary/">Articles</a>
+                        <a class="nav-item nav-link ts-scroll" href="#form-contact">Contact</a>
                         <li class col-md-3></li>                      
                     </div>
                    
@@ -65,25 +61,18 @@
                   
                 </div>
                 <!--end collapse-->
-                <div class="col-md-2"></div>
-                <div class="col-md-3 ">
-                <?php
-         include_once 'jdf.php';
-
-    $day_number = jdate('j');
-    $month_number = jdate('n');
-    $year_number = jdate('y');
-    $day_name = jdate('l');
-    echo "<h5 class='text-dark'> امروز $day_name ، $day_number-$month_number-$year_number</h5>";
+                <div class="col-md-3"></div>
+                <div class="col-md-3 "><p class="text-dark">
+                <?php 
+echo "Today is " .date("Y/m/d h:i:sa");
 
 
-
-  ?>
+?>
+ </p>
                 </div>
             </div>
             <!--end container-->
         </nav>
-        
         <!--end navbar-->
         <!--*********************************************************************************************************-->
         <!--************ HERO ***************************************************************************************-->
@@ -108,7 +97,7 @@
                         </figure>
 
                         <!--TITLE -->
-                        <h1>من اسماعیل جعفری هستم</h1>
+                        <h1>Im ESMAEIL JAFARI</h1>
                         <h1 class="ts-bubble-border">
                             <span class="ts-title-rotate">
                                 <span class="active"> طراح سایت</span>
@@ -376,7 +365,7 @@
                 </div>
                 <!--end container-->
             </section>
-        
+
             <section class="ts-block pb-5" id="portfolio">
                 <div class="container">
                     <div class="ts-title">
@@ -782,7 +771,6 @@
                     </div>
                 </div>
                 <!--end container-->
-                <?php include "inc/db.php" ?>
             </section>
             <!--end #contact-->
 
@@ -892,7 +880,29 @@
         <!--end modal-dialog-->
     </div>
     <!--end modal-->
+<div class="row">
+$query=mysqli_query('select * from counter');
 
+	$field=mysql_fetch_array($query);
+
+	echo "
+
+	 
+
+	    بازدیدهای امروز : $field[today]
+
+	 
+
+	    بازدیدهای دیروز : $field[yesterday]
+
+	 
+
+	    کل بازدیدها : $field[total]
+
+	 
+
+	";
+</div>
 	<script src="assets/js/custom.hero.js"></script>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
@@ -909,4 +919,3 @@
 
 </body>
 </html>
-
